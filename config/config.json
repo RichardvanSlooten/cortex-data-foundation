@@ -1,42 +1,42 @@
 {
-    "testData": true,
+    "testData": false,
     "deploySAP": true,
-    "deploySFDC": true,
-    "deployMarketing": true,
+    "deploySFDC": false,
+    "deployMarketing": false,
     "turboMode": true,
-    "projectIdSource": "",
-    "projectIdTarget": "",
-    "targetBucket": "",
-    "location": "US",
+    "projectIdSource": "vdxl-acc-data-reporting-01",
+    "projectIdTarget": "vdxl-acc-data-reporting-01",
+    "targetBucket": "vdxl-acc-data-reporting-01-dags",
+    "location": "EU",
     "languages": [
         "E",
         "S"
     ],
     "currencies": [
-        "USD"
+        "EUR"
     ],
     "testDataProject": "kittycorn-public",
     "k9": {
         "datasets": {
-            "processing": "K9_PROCESSING",
-            "reporting": "K9_REPORTING"
+            "processing": "EXT_PROCESSING",
+            "reporting": "EXT_REPORTING"
         }
     },
     "SAP": {
         "deployCDC": true,
         "datasets": {
-            "cdc": "",
-            "raw": "",
+            "cdc": "SAP_RAW_MERGED",
+            "raw": "sap_cortex",
             "ml": "ML_MODELS",
-            "reporting": "REPORTING"
+            "reporting": "SAP_REPORTING"
         },
-        "SQLFlavor": "ecc",
-        "mandt": "100"
+        "SQLFlavor": "S4",
+        "mandt": "300"
     },
     "SFDC": {
-        "deployCDC": true,
-        "createMappingViews": true,
-        "createPlaceholders": true,
+        "deployCDC": false,
+        "createMappingViews": false,
+        "createPlaceholders": false,
         "datasets": {
             "cdc": "",
             "raw": "",
@@ -44,12 +44,12 @@
         }
     },
     "marketing": {
-        "deployGoogleAds": true,
-        "deployCM360": true,
-        "deployTikTok": true,
+        "deployGoogleAds": false,
+        "deployCM360": false,
+        "deployTikTok": false,
         "dataflowRegion": "",
         "GoogleAds": {
-            "deployCDC": true,
+            "deployCDC": false,
             "lookbackDays": 180,
             "datasets": {
                 "cdc": "",
@@ -58,7 +58,7 @@
             }
         },
         "CM360": {
-            "deployCDC": true,
+            "deployCDC": false,
             "dataTransferBucket": "",
             "datasets": {
                 "cdc": "",
@@ -67,7 +67,7 @@
             }
         },
         "TikTok": {
-            "deployCDC": true,
+            "deployCDC": false,
             "datasets": {
                 "cdc": "",
                 "raw": "",
