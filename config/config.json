@@ -4,9 +4,9 @@
     "deploySFDC": false,
     "deployMarketing": false,
     "turboMode": true,
-    "projectIdSource": "vdxl-acc-data-reporting-01",
-    "projectIdTarget": "vdxl-acc-data-reporting-01",
-    "targetBucket": "vdxl-acc-data-reporting-01-dags",
+    "projectIdSource": "vdxl-prod-data-reporting-01",
+    "projectIdTarget": "vdxl-prod-data-reporting-01",
+    "targetBucket": "vdxl-prod-data-reporting-01-dags",
     "location": "EU",
     "languages": [
         "E",
